@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Социальная сеть</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <div id="auth" class="mb-4">
+            <div id="register" class="card p-4 mb-4">
+                <h2 class="card-title">Регистрация</h2>
+                <input type="text" id="register-username" class="form-control mb-3" placeholder="Имя пользователя">
+                <input type="email" id="register-email" class="form-control mb-3" placeholder="Email">
+                <input type="password" id="register-password" class="form-control mb-3" placeholder="Пароль">
+                <button class="btn btn-primary" onclick="register()">Регистрация</button>
+            </div>
+            <div id="login" class="card p-4">
+                <h2 class="card-title">Вход</h2>
+                <input type="email" id="login-email" class="form-control mb-3" placeholder="Email">
+                <input type="password" id="login-password" class="form-control mb-3" placeholder="Пароль">
+                <button class="btn btn-primary" onclick="login()">Войти</button>
+            </div>
+        </div>
+        <div id="profile" class="card p-4 mb-4" style="display: none;">
+            <h2 class="card-title">Профиль</h2>
+            <div id="user-profile" class="mb-3"></div>
+        </div>
+        <div id="friends" class="card p-4 mb-4" style="display: none;">
+            <h2 class="card-title">Друзья</h2>
+            <div id="friends-list" class="mb-3"></div>
+            <input type="text" id="friend-id" class="form-control mb-3" placeholder="ID друга">
+            <button class="btn btn-primary" onclick="addFriend()">Добавить друга</button>
+            <div id="friend-notifications" class="mt-3"></div>
+        </div>
+        <div id="posts" class="card p-4 mb-4" style="display: none;">
+            <h2 class="card-title">Публикации</h2>
+            <textarea id="post-content" class="form-control mb-3" placeholder="О чем вы думаете?"></textarea>
+            <button class="btn btn-primary" onclick="createPost()">Опубликовать</button>
+            <div id="post-list" class="mt-3"></div>
+        </div>
+        <div id="messages" class="card p-4" style="display: none;">
+            <h2 class="card-title">Сообщения</h2>
+            <div id="chat-list" class="mb-3"></div>
+            <input type="text" id="message-friend-id" class="form-control mb-3" placeholder="ID друга">
+            <textarea id="message-content" class="form-control mb-3" placeholder="Напишите сообщение..."></textarea>
+            <button class="btn btn-primary" onclick="sendMessage()">Отправить сообщение</button>
+            <div id="message-list" class="mt-3"></div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+/* Определяем стиль для элемента body */
+body {
+    /* Устанавливаем семейство шрифтов для текста на странице */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    /* Устанавливаем цвет фона для страницы */
+    background-color: #f8f8f8;
+    /* Убираем внешние отступы */
+    margin: 0;
+    /* Убираем внутренние отступы */
+    padding: 0;
+}
+
+/* Определяем стиль для элементов с классом container */
+.container {
+    /* Ограничиваем максимальную ширину контейнера */
+    max-width: 800px;
+}
+
+/* Определяем стиль для элементов с классом card-title */
+.card-title {
+    /* Устанавливаем размер шрифта */
+    font-size: 24px;
+    /* Устанавливаем цвет текста */
+    color: #333;
+}
+
+/* Определяем общий стиль для элементов textarea, input и button */
+textarea, input, button {
+    /* Устанавливаем нижний внешний отступ */
+    margin-bottom: 15px;
+}
+
+/* Определяем стиль для элементов с указанными идентификаторами */
+#post-list, #comment-list, #friend-list, #message-list, #chat-list {
+    /* Устанавливаем верхний внешний отступ */
+    margin-top: 20px;
+}
+
+/* Определяем стиль для элементов с указанными классами */
+.post, .comment, .message, .friend, .chat {
+    /* Устанавливаем нижнюю границу */
+    border-bottom: 1px solid #eee;
+    /* Устанавливаем внутренние отступы сверху и снизу, а также слева и справа */
+    padding: 10px 0;
+}
+
+/* Определяем стиль для последнего элемента с указанными классами */
+.post:last-child, .comment:last-child, .message:last-child, .friend:last-child, .chat:last-child {
+    /* Убираем нижнюю границу */
+    border-bottom: none;
+}
+
+/* Определяем стиль для элементов с классом post */
+.post {
+    /* Устанавливаем нижний внешний отступ */
+    margin-bottom: 20px;
+}
+
+/* Определяем стиль для элементов textarea и button внутри элементов с классом post */
+.post textarea, .post button {
+    /* Устанавливаем верхний внешний отступ */
+    margin-top: 10px;
+}
+
+/* Определяем стиль для элементов с классом comment */
+.comment {
+    /* Устанавливаем левый внешний отступ */
+    margin-left: 20px;
+}
+
+/* Определяем стиль для элементов с классами friend и chat */
+.friend, .chat {
+    /* Устанавливаем указатель мыши при наведении */
+    cursor: pointer;
+    /* Устанавливаем переход для изменения цвета фона */
+    transition: background-color 0.3s;
+}
+
+/* Определяем стиль для элементов friend и chat при наведении */
+.friend:hover, .chat:hover {
+    /* Устанавливаем цвет фона при наведении */
+    background-color: #f1f1f1;
+}
